@@ -1,0 +1,10 @@
+インストール方法
+
+1.httpd.confに追加してください
+
+#PV log
+LogFormat "%{originallog}n %{%H:%M}t %V %{%Y%m%d}t %D %P %U %r" pv
+CustomLog logs/PNEMANAGER.pv_log pv
+
+2.opPvPluginをplugin以下にコピーしてください
+
